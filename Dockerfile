@@ -24,5 +24,5 @@ RUN apt-get remove -y --purge wget git
 RUN apt-get clean
 
 ADD . /var/www/html
-RUN /usr/local/sbin/composer install --prefer-source --optimize-autoloader --no-interaction
+RUN cd /var/www/html && /usr/local/sbin/composer install --prefer-source --optimize-autoloader --no-interaction
 RUN chown -R www-data:www-data /var/www/html

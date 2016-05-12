@@ -192,8 +192,6 @@ definitions:
         description: 'Ticket title'
       description:
         type: string
-      status:
-        type: integer
       type:
         type: string
         enum: ['question', 'incident', 'service-request', 'bug-report']

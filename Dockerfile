@@ -1,4 +1,4 @@
-FROM php:7-fpm
+FROM php:7.0.6-fpm
 
 # Deps for building extensions
 RUN apt-get update && apt-get install -y git libmemcached-dev zlib1g-dev
